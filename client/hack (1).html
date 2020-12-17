@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SAP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Inference</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Visualization</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <h5>MODEL INPUT PARAMETERS</h5>
+            <br>
+            <p style="margin: 0; padding: 0;"> Parameters</p>
+            <hr style="margin-top: 0; width: 80%;">
+            <br>
+            <div>
+                <form action="" method="">
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">1. symboling</label>
+                        <div class="col-sm-6">
+                            <select id="uisymboling" class="form-control form-control-sm" style="-webkit-appearance: menulist;">
+                                <option selected>3</option>
+                                <option>2</option>
+                                <option>1</option>
+                                <option>0</option>
+                                <option>-1</option>
+                                <option>-2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">2. fueltype</label>
+                        <div class="col-sm-6">
+                            <select id="uifueltype" class="form-control form-control-sm" style="-webkit-appearance: menulist;">
+                                <option selected>gas</option>
+                                <option>diesel</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">3. aspiration</label>
+                        <div class="col-sm-6">
+                            <select id="uiaspiration" class="form-control form-control-sm" style="-webkit-appearance: menulist;">
+                                <option selected>std</option>
+                                <option>turbo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">4. doornumber</label>
+                        <div class="col-sm-6">
+                            <select id="uidoornumber" class="form-control form-control-sm" style="-webkit-appearance: menulist;">
+                                <option selected>two</option>
+                                <option>four</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">5. carbody</label>
+                        <div class="col-sm-6">
+                            <select id="uicarbody" class="form-control form-control-sm" style="-webkit-appearance: menulist;"> 
+                                <option selected>convertible</option>
+                                <option>hatchback</option>
+                                <option>sedan</option>
+                                <option>wagon</option>
+                                <option>hardtop</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">6. drivewheel</label>
+                        <div class="col-sm-6">
+                            <select id="uidrivewheel" class="form-control form-control-sm" style="-webkit-appearance: menulist;">
+                                <option selected>rwd</option>
+                                <option>fwd</option>
+                                <option>4wd</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">7. enginelocation</label>
+                        <div class="col-sm-6">
+                            <select id="uienginelocation" class="form-control form-control-sm" style="-webkit-appearance: menulist;">
+                                <option selected>front</option>
+                                <option>rear</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">8. wheelbase</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control form-control-sm" id="uiwheelbase" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">9. car length</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control form-control-sm" id="uicarlength" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="" class="col-sm-3 col-form-label-sm">10. car width</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control form-control-sm" id="uicarwidth" placeholder="">
+                        </div>
+                    </div>
+                    <div class="mb-3" style="text-align: center;">
+                        <button type="button" class="btn btn-success btn-sm" onclick="onClickedEstimatePrice()">PREDICT</button>
+                        <button type="button" class="btn btn-secondary btn-sm" onclick="onClickedEstimatePrice()">CLEAR</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+          <div class="col">
+              <h5> PREDICTION RESULTS </h5>
+              <br>
+                <p style="margin: 0; padding: 0;"> Model Predictions</p>
+                <hr style="margin-top: 0; width: 80%;">
+                <br>
+               <div id="uiEstimatedPrice"></div>
+          </div>
+
+        </div>
+    </div>
+
+    <footer class="footer bg-dark py-3 mt-auto">
+        <div class="container">
+            <span class="text-muted">
+                SAP ML Hackathon @ SG 2020
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
