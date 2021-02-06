@@ -1,6 +1,6 @@
 # Car-Price-Prediction
 
-This application was developed as part of SAP's internal Machine Learning Hackathon.
+A car price prediction application for SAP internal Machine Learning Hackathon.
 
 It predicts the price of used cars given some continous and discrete input values.
 
